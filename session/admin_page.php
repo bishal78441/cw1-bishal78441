@@ -135,7 +135,6 @@ if (isset($_POST['change_roles'])) {
          <a href="logout.php" class="btn">Logout</a>
       </div>
    </div>
-
    <div class="hahaha">
       <div class="hehehe">
          <!-- Display registered users in a table -->
@@ -169,6 +168,15 @@ if (isset($_POST['change_roles'])) {
          </table>
       </div>
    </div>
+   <div class="hahaha">
+    <div class="hehehe">
+        <h2>
+            <form method="POST" action="add_user.php">
+                <button type="submit" name="add_user">Add user</button>
+            </form>
+        </h2>
+    </div>
+</div>
 
 </body>
 
