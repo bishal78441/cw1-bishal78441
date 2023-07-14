@@ -36,7 +36,22 @@ if(isset($_POST['send'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/stylee.css">
+   <script>
+  function previewImage(event) {
+    var input = event.target;
+    var reader = new FileReader();
+
+    reader.onload = function() {
+      var img = document.getElementById("profile-image");
+      img.src = reader.result;
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+</script>
+
+
 
 </head>
 <body>
@@ -69,16 +84,16 @@ if(isset($message)){
       <a href="#services">services</a>
       <a href="#portfolio">portfolio</a>
       <a href="#contact">contact</a>
-      <a href="./session/register_form.php">register</a>
    </nav>
 
    <div class="follow">
-      <a href="https://www.facebook.com/bishal.timsina.2002/" class="fab fa-facebook-f"></a>
-      <a href="https://twitter.com/BishalT232" class="fab fa-twitter"></a>
-      <a href="https://www.instagram.com/a_pocalyps_e/" class="fab fa-instagram"></a>
-      <a href="https://www.linkedin.com/in/bishal-timsina-aa381b263/" class="fab fa-linkedin"></a>
-      <a href="https://github.com/bishal78441" class="fab fa-github"></a>
-   </div>
+  <a href="#" data-prompt="Add Facebook link" class="fab fa-facebook-f"></a>
+  <a href="#" data-prompt="Add Twitter link" class="fab fa-twitter"></a>
+  <a href="#" data-prompt="Add Instagram link" class="fab fa-instagram"></a>
+  <a href="#" data-prompt="Add LinkedIn link" class="fab fa-linkedin"></a>
+  <a href="#" data-prompt="Add GitHub link" class="fab fa-github"></a>
+</div>
+
 
 </header>
 
@@ -88,9 +103,13 @@ if(isset($message)){
 
 <section class="home" id="home">
 
-   <div class="image" data-aos="fade-right">
-      <img src="images/profile.jpg" alt="">
-   </div>
+<div class="image" data-aos="fade-right">
+  <img id="profile-image" src="images/placeholder.jpg" alt="">
+  <input type="file" accept="image/*" onchange="previewImage(event)" class="btn">
+</div>
+
+
+
 
    <div class="content">
       <h3 data-aos="fade-up">hi, i am <span>Mr. Bishal Timsina</span> </h3>
@@ -359,6 +378,14 @@ if(isset($message)){
 <!-- contact section ends -->
 
 <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>Mr. Bishal Timsina</span> </div>
+
+
+
+
+
+
+
+
 
 
 

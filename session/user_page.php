@@ -40,7 +40,7 @@ if(!isset($_SESSION['user_name'])){
 <div class="container">
    <div class="content">
          <p>if you want to create a CV click the create <span>Cv button</span></p>
-         <p><p><a href="../CV-Generator/index.php" class="btn">Create</a></p></p>
+         <p><p><a href="c_protfolio.php" class="btn">Create</a></p></p>
       </div>
 </div>
 </body>
