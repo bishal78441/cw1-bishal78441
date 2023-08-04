@@ -38,10 +38,18 @@ if(!isset($_SESSION['user_name'])){
 </div>
 
 <div class="container">
+<div class="content">
+    <p>if you want to create a CV click the create <span>Cv button</span></p>
+    <p><p><a href="CV-Generator-master/index.php" class="btn">Create Cv</a></p></p>
+</div>
+
+
+
+<div class="container">
    <div class="content">
-         <p>if you want to create a CV click the create <span>Cv button</span></p>
-         <p><p><a href="c_protfolio.php" class="btn">Create</a></p></p>
-      </div>
+      <p>if you want to create a protfolio click the create <span>Cv button</span></p>
+      <p><p><a href="/cw1-bishal78441/freelance/index.php" class="btn">Create Protfolio</a></p></p>
+   </div>
 </div>
 </body>
 </html>
